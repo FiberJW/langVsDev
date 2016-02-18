@@ -1,0 +1,19 @@
+{
+  "name": "lang-v-dev",
+  "version": "1.0.0",
+  "description": "Analyze How Programming Languages Affect Developer Happiness.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datwheat/langVsDev.git"
+  },
+  "author": "Jau'n Wheatley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/datwheat/langVsDev/issues"
+  },
+  "homepage": "https://github.com/datwheat/langVsDev#readme"
+}
