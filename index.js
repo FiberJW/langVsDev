@@ -1,3 +1,3 @@
-var ageUtils = require('./utils/age');
+var utils = require('./utils/utils');
 
-console.log(ageUtils.getAvg());
+console.log(utils);
