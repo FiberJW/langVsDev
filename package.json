@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Analyze How Programming Languages Affect Developer Happiness.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "calc": "index.js"
   },
   "repository": {
     "type": "git",
