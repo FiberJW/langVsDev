@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Analyze How Programming Languages Affect Developer Happiness.",
   "main": "index.js",
-  "bin": {
-    "calc": "index.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/datwheat/langVsDev.git"
