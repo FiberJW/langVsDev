@@ -90,8 +90,8 @@ var stats = {
       average: 0
     }
   },
-  mostPop: '',
-  leastPop: ''
+  highestRated: '',
+  leastRated: ''
 }
 data.forEach(function(entry) {
   var rating1 = {};
@@ -178,8 +178,15 @@ ratings.forEach(function(lang) {
   }
 });
 
-stats.mostPop = Object.keys(stats.tally).reduce(function(a, b){ return stats.tally[a]['average'] > stats.tally[b]['average'] ? a : b });
+stats.highestRated = Object.keys(stats.tally).reduce(function(a, b){ return stats.tally[a]['average'] > stats.tally[b]['average'] ? a : b });
 
-stats.leastPop = Object.keys(stats.tally).reduce(function(a, b){ return stats.tally[a]['average'] < stats.tally[b]['average'] ? a : b });
+stats.leastRated = Object.keys(stats.tally).reduce(function(a, b){ return stats.tally[a]['average'] < stats.tally[b]['average'] ? a : b });
+
+stats.listRatings = () => {
+  var ratingsList = Object.keys(stats.tally).map(function(name) {
+    return Math.round(stats.tally[name].average);
+  });
+  return ratingsList;
+}
 
 module.exports = stats;
